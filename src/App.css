@@ -20,7 +20,18 @@
   content: url("../public/assets/MyPic.jpg");
 }
 
-#slack{
+#twitter {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+}
+
+#slack {
   display: none;
 }
 
@@ -97,6 +108,10 @@
 }
 
 @media screen and (max-width: 597px) {
+  #twitter {
+    font-size: 18px;
+    line-height: 28px;
+  }
 
   #share {
     width: 40px;
