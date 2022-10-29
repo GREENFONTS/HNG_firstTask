@@ -5,9 +5,9 @@ const Header = () => {
     <div>
       <div className="profile">
         <div>
-          <img src="assets/Mypic.jpg" id="profile_img" alt="profile_img" />
+          <img src="assets/Mypic.jpg" id="profile__img" alt="profile_img" />
 
-          <div id="twitter">GODWILLONYEWUC1</div>
+          <div id="twitter">GODWILL ONYEWUCHI</div>
 
           <div id="slack">Elevio</div>
         </div>
