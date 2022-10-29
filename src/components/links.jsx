@@ -19,9 +19,12 @@ const Links = () => {
         target="_blank"
         id="books"
         rel="noreferrer"
-        title="An online book store for both design and coding."
+        title="Zuri Book Resource "
       >
-        Zuri Books
+        <div>
+          Zuri Books
+          <sub>An online book store for both design and coding.</sub>
+        </div>
       </a>
 
       <a
@@ -30,9 +33,14 @@ const Links = () => {
         target="_blank"
         id="book__python"
         rel="noreferrer"
-        title="A comprehensive and beginner-friendly introduction to python."
+        title="Python Book"
       >
-        Python Book
+        <div>
+          Python Book
+          <sub>
+            A comprehensive and beginner-friendly introduction to python.
+          </sub>
+        </div>
       </a>
 
       <a
@@ -41,9 +49,15 @@ const Links = () => {
         target="_blank"
         id="pitch"
         rel="noreferrer"
-        title="A trusted and tested service which helps to regulate and thoroughly vet coders."
+        title="Background Check for Coders"
       >
-        Background Check for Coders
+        <div>
+          Background Check for Coders
+          <sub>
+            A trusted and tested service which helps to regulate and thoroughly
+            vet coders.
+          </sub>
+        </div>
       </a>
 
       <a
@@ -52,9 +66,15 @@ const Links = () => {
         target="_blank"
         id="book__design"
         rel="noreferrer"
-        title="A well broken down resource with laid down guidelines to becoming a master of design."
+        title="Design books"
       >
-        Design Books
+        <div>
+          Design Books
+          <sub>
+            A well broken down resource with laid down guidelines to becoming a
+            master of design.
+          </sub>
+        </div>
       </a>
 
       <div className="icons">

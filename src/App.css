@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-#profile_img {
+#profile__img {
   width: 88px;
   height: 88px;
   border-radius: 275px;
@@ -69,6 +69,7 @@
   background: #eaecf0;
   border: 1px solid #eaecf0;
   border-radius: 8px;
+  padding: 15px;
 
   font-family: "Inter";
   font-style: normal;
@@ -77,6 +78,14 @@
   line-height: 28px;
   text-decoration: none;
   color: #101828;
+}
+
+.links > div > sub {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 15px;
 }
 
 .icons {
@@ -130,8 +139,14 @@
     padding: 24px 32px;
     gap: 8px;
     width: 343px;
-    height: 68px;
+    height: 76px;
     border-radius: 8px;
+    line-height: 15px;
+  }
+
+  .links > div > sub {
+    margin-top: 5px;
+    font-size: 12px;
   }
 
   .footer {
