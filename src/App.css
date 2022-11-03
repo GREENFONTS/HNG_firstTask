@@ -290,7 +290,8 @@
   .contactCon {
     width: 100%;
     padding: 20px;
-    margin: 0px;
+    height: 100vh;
+    margin: 10px auto 100px;
   }
 
   #subTitle {
