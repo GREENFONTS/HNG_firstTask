@@ -19,6 +19,7 @@ const Contact = () => {
               className="form-control"
               type="text"
               placeholder="Enter your first name"
+              id="first_name"
             />
           </div>
 
@@ -30,6 +31,7 @@ const Contact = () => {
               className="form-control"
               type="text"
               placeholder="Enter your last name"
+              id="last_name"
             />
           </div>
         </div>
@@ -42,6 +44,7 @@ const Contact = () => {
             className="form-control"
             type="email"
             placeholder="yourname@email.com"
+            id="email"
           />
         </div>
 
@@ -54,6 +57,7 @@ const Contact = () => {
             type="text"
             placeholder="Send me a message and I'll reply you as soon as possible..."
             rows="5"
+            id="message"
           ></textarea>
         </div>
 
@@ -62,7 +66,7 @@ const Contact = () => {
           <p>You agree to providing your data to name who may contact you.</p>
         </div>
 
-        <button type="button" className="btn">Send message</button>
+        <button type="button" className="btn" id="btn__submit">Send message</button>
       </div>
     </div>
   );
