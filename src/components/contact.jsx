@@ -63,7 +63,7 @@ const Contact = () => {
 
         <div className="agree">
           <input type="checkbox" className="checkbox"/>
-          <p>You agree to providing your data to name who may contact you.</p>
+          <p>You agree to providing your data to Elevio who may contact you.</p>
         </div>
 
         <button type="button" className="btn" id="btn__submit">Send message</button>
