@@ -287,26 +287,5 @@
     height: 24px;
   }
 
-  .contactCon {
-    width: 100%;
-    padding: 20px;
-    margin: 0px;
-  }
 
-  #subTitle {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .names {
-    display: block;
-  }
-
-  .form-group {
-    width: 80%;
-    margin: 20px 0px;
-  }
-  .btn{
-    width: 90%;
-  }
 }
