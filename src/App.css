@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400&display=swap");
 .App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0px;
+  font-family: "Inter";
+  font-style: normal;
 }
 
 .profile {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +23,6 @@
 
 #twitter {
   margin-top: 10px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -44,8 +43,6 @@
 }
 
 #slack {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -54,7 +51,9 @@
 }
 
 .links_section {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .links {
@@ -70,9 +69,6 @@
   border: 1px solid #eaecf0;
   border-radius: 8px;
   padding: 15px;
-
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
@@ -102,18 +98,134 @@
 }
 
 .footer {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-family: "Inter";
-  font-style: normal;
+  width: 85%;
+  margin: 30px auto 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #667085;
+}
+
+.footer > div {
+  display: flex;
+  border-top: 0.5px solid #eff0f1;
+  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links > div > sub {
+  display: none;
+}
+
+.contactCon {
+  width: 50%;
+  margin: 30px auto 0px;
+  height: 100vh;
+}
+
+#title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+#subTitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
+}
+
+.form {
+  margin-top: 30px;
+  width: 100%;
+}
+.names {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+
+.form-group {
+  display: block !important;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 14px;
+  gap: 8px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #667085;
+}
+
+.agree {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 90%;
+}
+
+.checkbox{
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+}
+
+.agree > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+}
+
+.btn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+  background: #1570ef;
+  border: 1px solid #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 597px) {
@@ -150,16 +262,19 @@
   }
 
   .footer {
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 24px;
-    gap: 10px;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     color: #667085;
+  }
+
+  .footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    gap: 10px;
   }
 
   #zuri {
@@ -170,5 +285,28 @@
   #i4g {
     width: 99.1px;
     height: 24px;
+  }
+
+  .contactCon {
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+  }
+
+  #subTitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .names {
+    display: block;
+  }
+
+  .form-group {
+    width: 80%;
+    margin: 20px 0px;
+  }
+  .btn{
+    width: 90%;
   }
 }
