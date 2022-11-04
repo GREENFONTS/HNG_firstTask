@@ -8,7 +8,7 @@ const Contact = () => {
         Hi there, contact me to ask me about anything you have in mind.
       </p>
 
-      <div className="form">
+      <form className="form">
         <div className="names">
           <div className="form-group">
             <div className="form-label">
@@ -20,6 +20,7 @@ const Contact = () => {
               type="text"
               placeholder="Enter your first name"
               id="first_name"
+              required={true}
             />
           </div>
 
@@ -32,6 +33,7 @@ const Contact = () => {
               type="text"
               placeholder="Enter your last name"
               id="last_name"
+              required={true}
             />
           </div>
         </div>
@@ -45,6 +47,7 @@ const Contact = () => {
             type="email"
             placeholder="yourname@email.com"
             id="email"
+            required={true}
           />
         </div>
 
@@ -58,16 +61,17 @@ const Contact = () => {
             placeholder="Send me a message and I'll reply you as soon as possible..."
             rows="5"
             id="message"
+            required={true}
           ></textarea>
         </div>
 
         <div className="agree">
-          <input type="checkbox" className="checkbox"/>
+          <input type="checkbox" className="checkbox" required={true}/>
           <p>You agree to providing your data to Elevio who may contact you.</p>
         </div>
 
-        <button type="button" className="btn" id="btn__submit">Send message</button>
-      </div>
+        <button type="submit" className="btn" id="btn__submit">Send message</button>
+      </form>
     </div>
   );
 };
